@@ -1,9 +1,12 @@
 package com.ITProject.tictactoe;
 
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.graphics.Color;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
+import com.ITProject.tictactoe.R;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -22,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private TextView textviewPlayer1;
     private TextView textviewPlayer2;
+
 
 
     @Override
@@ -64,8 +68,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (player1Turn)
         {
             ((Button) v).setText("X");
+            ((Button) v).setTextColor(Color.YELLOW);
         } else {
             ((Button) v).setText("O");
+            ((Button) v).setTextColor(Color.MAGENTA);
         }
 
         roundCount++;
