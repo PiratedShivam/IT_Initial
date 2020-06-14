@@ -1,8 +1,6 @@
 package com.ITProject.tictactoe;
 
 
-//package com.ITProject.tictactoe;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.graphics.Color;
